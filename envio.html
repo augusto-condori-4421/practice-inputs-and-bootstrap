@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Envios fabulosos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="flex-row">    
+                <img src="img/logo.webp" alt="logo-company">
+                <h1>FabulEnvios</h1>
+            </div>
+            <ul class="flex-row">
+                <li><a href="" class="link">Sobre nosotros</a></li>
+                <li><a href="index.html" class="link">Buscar</a></li>
+                <li><a href="envio.html" class="link">Enviar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-column">
+        <article class="flex-column">
+            <label for="form-enviar"><h2>Completar los campos para el correcto envio</h2></label>
+            <form action="" id="form-enviar" class="flex-column form-envio">
+                <div class="flex-row"> 
+                    <select name="personas" id="personas" class="input-general">
+                        <option value="" selected disabled>Emisor</option>
+                        <option value="hector">Héctor Villaseñor</option>
+                        <option value="eric">D. Eric Aguayo</option>
+                        <option value="carmen">Carmen Pedraza</option>
+                        <option value="felipe">Felipe Pinto</option>
+                        <option value="luis">Luis</option>
+                        <option value="alberto">Alberto Vila</option>
+                        <option value="maria">Maria Perez</option>
+                        <option value="berta">Berta Carretero Hijo</option>
+                        <option value="julia">Julia</option>
+                        <option value="admin">Super-Admin</option>
+                    </select>
+                    
+                    <select name="personas" id="personas" class="input-general">
+                        <option value="" selected disabled>Destinatario</option>
+                        <option value="hector">Héctor Villaseñor</option>
+                        <option value="eric">D. Eric Aguayo</option>
+                        <option value="carmen">Carmen Pedraza</option>
+                        <option value="felipe">Felipe Pinto</option>
+                        <option value="luis">Luis</option>
+                        <option value="alberto">Alberto Vila</option>
+                        <option value="maria">Maria Perez</option>
+                        <option value="berta">Berta Carretero Hijo</option>
+                        <option value="julia">Julia</option>
+                        <option value="admin">Super-Admin</option>
+                    </select>
+                </div>
+
+                <div class="flex-row">
+                    <input type="tel" name="phone-number" id="" class="input-general" placeholder="Telefono">
+                    <input type="text" name="coordesbadas" id="" placeholder="Coordenadas" class="input-general">
+                    <input type="number" name="cantidad-productos" id="" placeholder="Cantidad de paquetes" class="input-general">
+                </div>
+
+                <div class="flex-row">
+                    <select name="estado-pago" id="" class="input-general">
+                        <option value="" selected disabled>Estado Pago</option>
+                        <option value="pagado">Pagado</option>
+                        <option value="por-pagar">Por pagar</option>
+                    </select>
+                    
+                    <select name="estado-envio" id="" class="input-general">
+                        <option value="" selected disabled>Estado Envío</option>
+                        <option value="entregado">Entregado</option>
+                        <option value="en-transito">En transito</option>
+                        <option value="por-enviar">Por enviar</option>
+                        <option value="demorado">Demorado</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Enviar paquete <i class="bi bi-box-seam"></i></button>
+            </form>
+        </article>
+    </main>
+    <footer class="flex-row">
+        <p>
+            FabulEnvios 2025 | &copy; Todos los derechos reservados
+        </p>
+        <ul class="flex-row">
+            <li><a href="https://www.linkedin.com/" class="link" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/" class="link" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" class="link" target="_blank"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

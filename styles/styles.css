@@ -1,0 +1,193 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+:root {
+    --xdark: #001122;
+    --dark: #003959;
+    --md: #006d9c;
+    --light: #00ade9;
+    --xlight: #00f9ff;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: var(--xdark);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    color: var(--xlight);
+    transition: color .2s;
+}
+
+.link:hover {
+    color: var(--light);
+}
+
+.input-general {
+    all: unset;
+    cursor: pointer;
+
+    height: 1.7rem;
+    padding: .5rem 2rem;
+    background-color: var(--dark);
+    color: var(--xlight);
+    border-radius: 1rem;
+
+    /* alinea los select, verticalmente */
+    line-height: 1.7rem;
+}
+
+.btn {
+    border: none;
+    width: 6rem;
+    min-width: 4rem;
+    height: 2.6rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    border-radius: 1rem;
+
+    background-color: var(--dark);
+    color: var(--xlight);
+
+    transition: background-color .2s, color .2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--xlight);
+    color: var(--xdark);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* ------------------------------- Header ------------------------------- */
+header {
+    background-color: var(--dark);
+    
+    img {
+        width: 60px;
+        height: auto;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--white);
+        font-size: 1.3rem;
+    }   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+/* ------------------------------- Footer ------------------------------- */
+footer {
+    background-color: var(--dark);
+    text-align: center;
+    font-size: 1.2rem;
+    i {
+        font-size: 2rem;
+    }
+}
+
+/* ------------------------------- Main Index ------------------------------- */
+/* --------------- form --------------- */
+.section-form {
+    width: 100%;
+    padding: 2rem .5rem;
+}
+
+form {
+    width: 60%;
+
+    input {
+        width: 30%;
+    } 
+
+    select {
+        width: 20%;
+    }
+}
+
+/* --------------- table --------------- */
+.section-table {
+    width: 95%;
+}
+
+table {
+    border-collapse: collapse; /* fusiona los bordes */
+}
+
+th {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+th, td {
+    border: 1px solid var(--light); 
+    padding: 10px; 
+}
+
+tr:hover {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* ------------------------------- Envio ------------------------------- */
+.form-envio {
+    width: 95%;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    .btn {
+        text-align: center;
+        width: 20rem;
+        height: auto;
+        padding: 1rem;
+    }
+}

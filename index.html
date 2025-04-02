@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Envios fabulosos</title>
@@ -11,37 +11,41 @@
 <body>
     <header>
         <nav>
-            <div>    
-                <img src="img/logo.svg" alt="" width="80px">
+            <div class="flex-row">    
+                <img src="img/logo.webp" alt="logo-company">
                 <h1>FabulEnvios</h1>
             </div>
-            <ul>
-                <li>Sobre nosotros</li>
-                <li>Buscar</li>
-                <li>Enviar</li>
+            <ul class="flex-row">
+                <li><a href="" class="link">Sobre nosotros</a></li>
+                <li><a href="#buscar" class="link">Buscar</a></li>
+                <li><a href="envio.html" class="link">Enviar</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="flex-column">
+        <section id="buscar" class="section-form flex-column    ">
             <h2>Listado de Paquetes</h2>
-            <h3>Buscar Paquete</h3>
-            <form action="">
-                <input type="search" name="busqueda" id="" placeholder="Emisor, Destinatario">
-                <select name="estado-pago" id="">
+            <label for="emisor-dest">
+                <h3>Buscar Paquete</h3>
+            </label>
+            <form action="" class="flex-row">
+                <input type="search" name="busqueda" id="emisor-dest" placeholder="Emisor, Destinatario" class="input-general">
+                <select name="estado-pago" id="" class="input-general">
+                    <option value="" selected disabled>Estado Pago</option>
                     <option value="pagado">Pagado</option>
                     <option value="por-pagar">Por pagar</option>
                 </select>
-                <select name="estado-envio" id="">
+                <select name="estado-envio" id="" class="input-general">
+                    <option value="" selected disabled>Estado Envio</option>
                     <option value="entregado">Entregado</option>
                     <option value="en-transito">En transito</option>
                     <option value="por-enviar">Por enviar</option>
                 </select>
-                <button type="submit"><img src="img/search.svg" alt="buscar"></button>
+                <button type="submit" class="btn"><i class="bi bi-search"></i></button>
             </form>
         </section>
-        <section>
-            <table border="1">
+        <section class="section-table flex-row">
+            <table>
                 <thead>
                     <tr class="table-primary">
                         <th>ID</th>
@@ -105,10 +109,55 @@
                         <td>Entrega</td>
                         <td>-</td>
                     </tr>
+                    <tr>
+                        <td>63</td>
+                        <td>Maria Perez</td>
+                        <td>Berta Carretero Hijo</td>
+                        <td>----</td>
+                        <td>del Penedés</td>
+                        <td class="por-pagar">Por pagar</td>
+                        <td class="en-transito">En tránsito</td>
+                        <td>2021-10-28</td>
+                        <td>Entrega</td>
+                        <td>2021-11-25</td>
+                    </tr>
+                    <tr>
+                        <td>62</td>
+                        <td>Maria Perez</td>
+                        <td>Carmen Pedraza</td>
+                        <td>34544</td>
+                        <td>de Arriba</td>
+                        <td class="por-pagar">Por pagar</td>
+                        <td class="por-enviar">Por enviar</td>
+                        <td>----</td>
+                        <td>Entrega</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>61</td>
+                        <td>Super-Admin</td>
+                        <td>Julia</td>
+                        <td>410185033378</td>
+                        <td>Santiago</td>
+                        <td class="pagado">Pagado</td>
+                        <td class="entregado">Entregado</td>
+                        <td>2021-09-13</td>
+                        <td>Recolecta</td>
+                        <td>2022-01-05</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
     </main>
-    <footer class="">FabulEnvios 2025 | &copy; Todos los derechos reservados</footer>
+    <footer class="flex-row">
+        <p>
+            FabulEnvios 2025 | &copy; Todos los derechos reservados
+        </p>
+        <ul class="flex-row">
+            <li><a href="https://www.linkedin.com/" class="link" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/" class="link" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" class="link" target="_blank"><i class="bi bi-facebook"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
