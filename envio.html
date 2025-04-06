@@ -27,7 +27,7 @@
             <label for="form-enviar"><h2>Completar los campos para el correcto envio</h2></label>
             <form action="" id="form-enviar" class="flex-column form-envio">
                 <div class="flex-row"> 
-                    <select name="personas" id="personas" class="input-general">
+                    <select name="personas" id="personas" class="input-general" required>
                         <option value="" selected disabled>Emisor</option>
                         <option value="hector">Hector Villasenor</option>
                         <option value="eric">D. Eric Aguayo</option>
@@ -41,7 +41,7 @@
                         <option value="admin">Super-Admin</option>
                     </select>
                     
-                    <select name="personas" id="personas" class="input-general">
+                    <select name="personas" id="personas" class="input-general" required>
                         <option value="" selected disabled>Destinatario</option>
                         <option value="hector">Hector Villasenor</option>
                         <option value="eric">D. Eric Aguayo</option>
@@ -57,19 +57,19 @@
                 </div>
 
                 <div class="flex-row">
-                    <input type="tel" name="phone-number" id="" class="input-general" placeholder="Telefono">
-                    <input type="text" name="coordesbadas" id="" placeholder="Coordenadas" class="input-general">
-                    <input type="number" name="cantidad-productos" id="" placeholder="Cantidad de paquetes" class="input-general">
+                    <input type="tel" name="phone-number" id="" class="input-general" placeholder="Telefono" required>
+                    <input type="text" name="coordesbadas" id="" placeholder="Coordenadas" class="input-general" required>
+                    <input type="number" name="cantidad-productos" id="" placeholder="Cantidad de paquetes" class="input-general" required>
                 </div>
 
                 <div class="flex-row">
-                    <select name="estado-pago" id="" class="input-general">
+                    <select name="estado-pago" id="" class="input-general" required>
                         <option value="" selected disabled>Estado Pago</option>
                         <option value="pagado">Pagado</option>
                         <option value="por-pagar">Por pagar</option>
                     </select>
                     
-                    <select name="estado-envio" id="" class="input-general">
+                    <select name="estado-envio" id="" class="input-general" required>
                         <option value="" selected disabled>Estado Envio</option>
                         <option value="entregado">Entregado</option>
                         <option value="en-transito">En transito</option>
